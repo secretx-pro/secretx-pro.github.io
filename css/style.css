@@ -1,0 +1,103 @@
+.secret-title {
+    color: yellow;
+}
+
+.btn-login {
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+    width: 80px
+}
+
+.btn-login:hover {
+    color: black;
+    background-color: white;
+}
+
+.btn-login:active {
+    border-color: white;
+    color: white;
+    background-color: #0C0C0F;
+}
+
+.btn-slf {
+    background-color: #F4C66E;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+}
+
+.btn-slf:hover {
+    color: white;
+    background-color: #0C0C0F;
+    border-color: white;
+}
+
+.btn-slf:active {
+    border-color: white;
+    background-color: #F4C66E;
+    color: white;
+}
+
+.btn-reg {
+    border-color: white;
+    color: #F4C66E;
+    border-radius: 15px;
+    width: 100px
+}
+
+
+.btn-reg:hover {
+    background-color: #F4C66E;
+    color: white;
+}
+
+.btn-reg:active {
+    border-color: white;
+    background-color: black;
+    color: #F4C66E;
+}
+
+.swipe {
+    opacity: 0;
+    transform: translateY(50px); /* Начальное положение текста (внизу) */
+    transition: opacity 1s, transform 1s;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.swipe.show {
+opacity: 1;
+transform: translateY(0); /* Конечное положение текста (вверху) */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .btn-jsa {
+        width: 50%
+    }
+
+    .btn-ds {
+        width: 50%
+    }
+}
+
+.number {
+    animation: changeNumber 5s linear;
+}
+
+@keyframes changeNumber {
+    from {
+        content: "0";
+    }
+
+    to {
+        content: "10000000";
+    }
+}
