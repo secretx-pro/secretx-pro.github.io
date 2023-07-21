@@ -2,24 +2,28 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <title>SecretX</title>
 
 <body style="background-color: #0C0C0F;">
-    <div >
+    <div>
+
+
         <div class="navbar" style="margin-right: 6%; margin-left: 6%; margin-top: 1px">
             <nav class="navbar navbar-expand-lg navbar-light" style="width: 100%">
                 <div>
@@ -126,18 +130,18 @@
                     WhiteList!</h6>
                 <div class="justify-content-center pt-3">
                     <input minlength="1" type="email" id="emailInput" class="mx-2"
-                            style="padding-left:10px; padding: 8px;background-color: #121212; color: white; border-radius: 10px; border: 0.01rem solid #FFFFFF"
-                            placeholder="Your email">
-                        <input minlength="1" type="text" id="bep20Input" class="mx-2"
-                            style="padding-left:10px; padding: 8px;background-color: #121212; color: white; border-radius: 10px; border: 0.1px solid #FFFFFF"
-                            placeholder="Your wallet (Bep-20)">
-                        <button onclick="saveData()" class="btn btn-outline-warning"
-                            style="border-radius: 10px; padding: 7px;border-width: 0.01rem;margin-top: -1px;">Send</button>
+                        style="padding-left:10px; padding: 8px;background-color: #121212; color: white; border-radius: 10px; border: 0.01rem solid #FFFFFF"
+                        placeholder="Your email">
+                    <input minlength="1" type="text" id="bep20Input" class="mx-2"
+                        style="padding-left:10px; margin-top:10px;padding: 8px;background-color: #121212; color: white; border-radius: 10px; border: 0.1px solid #FFFFFF"
+                        placeholder="Your wallet (Bep-20)">
+                    <button onclick="saveData()" class="btn btn-outline-warning mt-2"
+                        style="border-radius: 10px; padding: 7px;border-width: 0.01rem;margin-top: -1px; width: 62%;">Send</button>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 
 
     <div align="center" class="pt-5 swipe">
